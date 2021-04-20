@@ -24,6 +24,21 @@ module.exports = {
             test: /\.s[ac]ss$/i,
             use: ["style-loader", "css-loader","sass-loader"],
           },
+          {
+            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'fonts/'
+                    }
+                },
+                {
+                    loader: 'file-loader?name=./assets/fonts/Roboto/[name].[ext]'
+                }
+            ]
+        }
         ],
       },
       devServer: {

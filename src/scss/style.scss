@@ -1,5 +1,74 @@
+@import "/src/scss/fonts/fonts.scss";
+
 body{
     background-color: #343539;
     color: #fff;
+    margin: 10% 50% 10% 20%
 }
+.header-article{
+    width: 680px;
+    height: 68px;
+    font-family: Helvetica;
+    font-size: 56px;
+    margin: 10px 0 20px 0;
+}
+.red{
+    background-color: #EF483E;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.routes-head,.transport-head,.cargo-head,.time-head{
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 20px 0 0 10px;
+}
+.input-title,.trasport-title,.cargo-title,.cargo-checkbox-text,.time-radio-title,.comment-title{
+    font-size: 13px;
+    font-family: Helvetica;
+}
+.routes-from__input,.routes-where__input{
+    width: 728px;
+    height: 44px;
+    margin: 20px 0 20px 0;
+}
+.transport-container{
+    display: flex;
+    justify-content: space-between;
+}
+.transport__select{
+    width: 172px;
+    height: 44px;
+}
+.cargo__select{
+    width: 356px;
+    height: 44px;
+}
+.danger-class{
+    width: 172px;
+    height: 44px;
+}
+.cargo__input{
+    width:172px;
+    height: 44px;
+}
+.cargo__checkbox{
+    background-color: #343539;
+    border-color: #fff;
+    width: 24px;
+    height: 24px;
+}
+.time__button {
+    width: 728px;
+    height: 44px;
+    background-color:rgba(75, 75, 79, 1);
+    color: rgba(207, 207, 207, 1);
+    text-align: left;
 
+}
+.comment__textarea{
+    width: 728px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 1);
+    ;
+}

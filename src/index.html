@@ -18,11 +18,11 @@
                 <span class="routes-head">Маршрут</span>
             </div>
             <div class="routes-from">
-                <div class="input-title"></div>
+                <div class="input-title">Откуда</div>
                 <input class="routes-from__input"></input>
             </div>
             <div class="routes-where">
-                <div class="input-title"></div>
+                <div class="input-title">Куда</div>
                 <input class="routes-where__input"></input>
             </div>
         </div>
@@ -32,21 +32,23 @@
                 <span class="transport-head">Транспорт</span>
             </div>
             <div class="trasport-weight">
-                <div class="trasport-title">Грузоподъёмность</div>
-                <select class="transport__select">
-                    <option value="" selected class="trasport__option disabled">Не выбрана</option>
-                    <option value="" class="trasport__option">Вариант 1</option>
-                    <option value="" class="trasport__option">Вариант 2</option>
-                    <option value="" class="trasport__option">Вариант 3</option>
-                    <option value="" class="trasport__option">Вариант 4</option>
-                    <option value="" class="trasport__option">Вариант 5</option>
-                </select>
-            </div>
-            <div class="trasport-method">
-                <div class="trasport-title">Способ погрузки</div>
-                <select class="transport__select">
-                    <option value="" selected class="trasport__option ">Задняя</option>
-                </select>
+                <div class="transport-container">
+                    <div class="trasport-title">Грузоподъёмность</div>
+                    <select class="transport__select">
+                        <option value="" selected class="trasport__option disabled">Не выбрана</option>
+                        <option value="" class="trasport__option">Вариант 1</option>
+                        <option value="" class="trasport__option">Вариант 2</option>
+                        <option value="" class="trasport__option">Вариант 3</option>
+                        <option value="" class="trasport__option">Вариант 4</option>
+                        <option value="" class="trasport__option">Вариант 5</option>
+                    </select>
+                </div>
+                <div class="trasport-method">
+                    <div class="trasport-title">Способ погрузки</div>
+                    <select class="transport__select">
+                        <option value="" selected class="trasport__option ">Задняя</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="cargo-block">
@@ -61,7 +63,7 @@
                 <option value="" class="cargo__option"></option>
             </select>
             <div class="cargo__title">Класс опасности</div>
-            <select name="" id="" class="cargo__select">
+            <select name="" id="" class="cargo__select danger-class">
                 <option value="" class="cargo__option" selected>Класс 5</option>
                 <option value="" class="cargo__option"></option>
                 <option value="" class="cargo__option"></option>
@@ -69,20 +71,20 @@
             <div class="cargo__title">Объявленная ценность,Р</div>
             <input type="text" class="cargo__input">
             <input type="checkbox" class="cargo__checkbox">
-            <span class="cargo-checkbox-text ">Требуется температурный режим</span>
+            <span class="cargo-checkbox-text">Требуется температурный режим</span>
             </div>
             <div class="time-block">
                 <div class="time-header">
-                    <span class="time-number red">5</span>
+                    <span class="time-number red">4</span>
                     <span class="time-head">Время</span>
                 </div>
                 <div class="time-radio-title">Когда прибыть на точку</div>
-                <button  class="time__button" >Адрес не указан</button>
+                <button  class="time__button active" >Адрес не указан</button>
                 <button  class="time__button">Адрес не указан</button>
                 
             </div>
             <div class="comment-block">
-                <div class="comment-title"></div>
+                <div class="comment-title">Комментарий к заказу</div>
                 <textarea name="" id="" cols="30" rows="10" class="comment__textarea" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
             </div>
     </div>
