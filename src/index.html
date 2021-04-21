@@ -14,8 +14,8 @@
         </div>
         <div class="routes-block">
             <div class="routes-header">
-                <span class="routes-number red">1</span>
-                <span class="routes-head">Маршрут</span>
+                <div class="routes-number red">1</div>
+                <div class="routes-head">Маршрут</div>
             </div>
             <div class="routes-from">
                 <div class="input-title">Откуда</div>
@@ -28,11 +28,11 @@
         </div>
         <div class="trasport-block">
             <div class="transport-header">
-                <span class="transport-number red">2</span>
+                <div class="transport-number red">2</div>
                 <span class="transport-head">Транспорт</span>
             </div>
-            <div class="trasport-weight">
-                <div class="transport-container">
+            <div class="trasport-weight-block">
+                <div class="transport-weight">
                     <div class="trasport-title">Грузоподъёмность</div>
                     <select class="transport__select">
                         <option value="" selected class="trasport__option disabled">Не выбрана</option>
@@ -43,6 +43,8 @@
                         <option value="" class="trasport__option">Вариант 5</option>
                     </select>
                 </div>
+                   
+                
                 <div class="trasport-method">
                     <div class="trasport-title">Способ погрузки</div>
                     <select class="transport__select">
@@ -52,30 +54,43 @@
             </div>
         </div>
         <div class="cargo-block">
-            <div class="cargo-header">           
-                 <span class="cargo-number red">3</span>
-                <span class="cargo-head">Груз</span>
+              
+            <div class="cargo-header"> 
+                       
+                    <div class="cargo-number red">3</div>
+                    <span class="cargo-head">Груз</span>
+                </div>
+                <div class="cargo-container"> 
+                    
+                <div class="cargo-title">Тип груза</div>
+                <select name="" id="" class="cargo__select">
+                    <option value="" class="cargo__option"></option>
+                    <option value="" class="cargo__option"></option>
+                    <option value="" class="cargo__option"></option>
+                </select>
+                <div class="cargo-container__flex">
+                    <div class="cargo-class">
+                        <div class="cargo__title">Класс опасности</div>
+                        <select name="" id="" class="cargo__select danger-class">
+                            <option value="" class="cargo__option" selected>Класс 5</option>
+                            <option value="" class="cargo__option"></option>
+                            <option value="" class="cargo__option"></option>
+                        </select>
+                    </div>
+                    <div class="cargo-price">
+                        <div class="cargo__title">Объявленная ценность, &#8381</div>
+                        <input type="text" class="cargo__input" placeholder=">1"                      >
+                    </div>
             </div>
-            <div class="cargo-title">Тип груза</div>
-            <select name="" id="" class="cargo__select">
-                <option value="" class="cargo__option"></option>
-                <option value="" class="cargo__option"></option>
-                <option value="" class="cargo__option"></option>
-            </select>
-            <div class="cargo__title">Класс опасности</div>
-            <select name="" id="" class="cargo__select danger-class">
-                <option value="" class="cargo__option" selected>Класс 5</option>
-                <option value="" class="cargo__option"></option>
-                <option value="" class="cargo__option"></option>
-            </select>
-            <div class="cargo__title">Объявленная ценность,Р</div>
-            <input type="text" class="cargo__input">
-            <input type="checkbox" class="cargo__checkbox">
-            <span class="cargo-checkbox-text">Требуется температурный режим</span>
+            <div class="cargo-container__checkbox">
+                    <input type="checkbox" class="cargo__checkbox">
+                    <div class="cargo-checkbox-text">Требуется температурный режим</div>
             </div>
+            </div>
+        </div>
             <div class="time-block">
                 <div class="time-header">
-                    <span class="time-number red">4</span>
+                    <div class="time-number red">4</div>
                     <span class="time-head">Время</span>
                 </div>
                 <div class="time-radio-title">Когда прибыть на точку</div>
