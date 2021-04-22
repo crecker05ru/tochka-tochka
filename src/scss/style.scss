@@ -1,0 +1,306 @@
+@import "/src/scss/fonts/fonts.scss";
+
+body{
+    background-color: #343539;
+    color: #fff;
+    margin: 2% 50% 10% 10%
+}
+.header-article{
+    width: 680px;
+    height: 68px;
+    font-family: Helvetica;
+    font-size: 56px;
+    margin: 10px 0 20px 0;
+}
+.info-block{
+    width: 356px;
+    height: 82px;
+    background-color:rgba(75, 75, 79, 1);
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 40px 15px 0px 15px;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+.red{
+    background-color: #EF483E;
+    border-radius: 50%;
+    width: 24px;
+    height: 22px;
+    padding-top: 5px;
+    text-align: center;
+    font-size:16px;
+    font-family: Helvetica;
+}
+.routes-head,.transport-head,.cargo-head,.time-head{
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0 0 0 8px;
+}
+.routes-header,.transport-header,.cargo-header,.time-header{
+    display: flex;
+}
+.transport-header{
+    margin: 40px 0 0 0;
+}
+.input-title{
+    margin: 7px 0 0 0;
+}
+.input-title,.trasport-title,.cargo-title,.cargo-checkbox-text,.time-radio-title,.comment-title,.time-radio-distance{
+    font-size: 13px;
+    font-family: Helvetica;
+}
+.routes-from__input,.routes-where__input{
+    width: 728px;
+    height: 44px;
+    margin: 7px 70px 10px 0;
+}
+.trasport-weight-block{
+    display: flex;
+    justify-content:baseline;
+    margin: 16px 0 0 0;
+}
+.transport__select{
+    width: 172px;
+    height: 44px;
+    margin: 8px 12px 0 0;
+    
+}
+select:focus {
+    outline: 0.15em solid rgb(253, 10, 10);
+    box-shadow: 0 0 0.2em rgb(255, 10, 10);
+}
+option[disabled] {
+    color: red;
+  }
+.cargo-block{
+    margin: 70px 0 0 0;
+}
+.cargo-container{
+    margin: 16px 0 0 0 ;
+}
+.cargo-container__flex{
+    display: flex;
+}
+.cargo__select{
+    width: 365px;
+    height: 44px;
+    margin: 8px 0 16px 0;
+}
+.cargo__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+.cargo__checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.cargo__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 3px solid;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.cargo__checkbox:checked+label::before {
+    border-color: #EF483E;
+    background-color: #EF483E;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.cargo__checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #a52c2c;
+  }
+.danger-class{
+    width: 172px;
+    height: 44px;
+}
+.cargo__input{
+    width:172px;
+    height: 38px;
+    margin: 8px 0 16px 0;
+}
+
+.cargo-checkbox-text{
+ margin: 10px 0 0 10px;
+}
+.cargo-price{
+ margin: 0 0 0 12px;
+}
+.cargo-temperature{
+margin: 10px 0 0 0;
+}
+.cargo-temperature-low__input{
+    width: 166px;
+    height: 38px;
+    margin : 8px 0 16px 0;
+}
+.cargo-temperature-high__input{
+    width: 172px;
+    height: 38px;
+    margin : 8px 0 16px 8px;
+}
+.cargo-temperature{
+    opacity: 0;
+}
+.time-block{
+    margin: 44px 0 0 0;
+}
+.time__button {
+    width: 728px;
+    height: 44px;
+    background-color:rgba(75, 75, 79, 1);
+    color: rgba(207, 207, 207, 1);
+    text-align: left;
+    margin: 0 0 3px 0 ;
+}
+.time-radio-title,.time-radio-distance{
+    margin: 16px 0 5px 0 ;
+}
+.time-radio__input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.time-radio__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.time-radio__input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 95% 95%;
+}
+.time-radio__input:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #dd0a0a;
+}
+.time-radio__input:not(:disabled):active+label::before {
+    background-color: #EF483E;
+    border-color: #EF483E
+}
+.time-radio__input:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+.time-radio__input:checked+label::before {
+    border-color: #EF483E;
+    background-color: #EF483E;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.time-radio__input:disabled+label::before {
+    background-color: #2190ff;
+}
+.time-choice{
+    background-color: rgba(113, 113, 116, 1);
+    border-radius: 2px;
+    width: 119px;
+    height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4px;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 590px;
+}
+.time__button{
+    position: relative;
+
+}
+.time__button__label{
+    font-size: 13px;
+    font-family: Helvetica;
+    position: absolute;
+    bottom: 13px;
+}
+.comment-block{
+    margin: 16px 0 0 0 ;
+}
+.comment-title{
+    margin:0 0 8px 0;
+}
+.comment__textarea{
+    width: 728px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: Helvetica;
+    font-size: 15px;
+}
+.time-container__flex{
+    width: 728px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:768px){
+    body{
+        background-color: #343539;
+        color: #fff;
+        margin: 50px 100px 100px 100px;
+    }
+    .info-block{
+        top: 1240px;
+        left: 100px;
+        width: 320px;
+    }
+    .routes-from__input,.routes-where__input{
+        width: 343px;
+        height: 44px;
+        margin: 7px 70px 10px 0;
+    }
+    .header-article{
+        width: 381px;
+        height: 40px;
+        font-family: Helvetica;
+        font-size: 32px;
+        margin: 10px 0 20px 0;
+    }
+    .time__button {
+        width: 343px;
+        height: 44px;
+        background-color:rgba(75, 75, 79, 1);
+        color: rgba(207, 207, 207, 1);
+        text-align: left;
+        margin: 0 0 3px 0 ;
+    }
+    .comment__textarea{
+        width: 343px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 1);
+        font-family: Helvetica;
+        font-size: 15px;
+    }
+    .time-container__flex{
+        width: 343px;
+    }
+    .time-choice{
+        position: absolute;
+        left: 200px;
+    }
+    .cargo-checkbox-text{
+        width: 250px;
+    }
+    .cargo-temperature{
+    opacity: 1;
+    }
+}
