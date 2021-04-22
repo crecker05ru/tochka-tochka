@@ -83,8 +83,8 @@
                     </div>
             </div>
             <div class="cargo-container__checkbox">
-                    <input type="checkbox" class="cargo__checkbox">
-                    <div class="cargo-checkbox-text">Требуется температурный режим</div>
+                <input type="checkbox" class="cargo__checkbox" id="cargo__checkbox_id">
+                <label class="cargo-checkbox-text" for="cargo__checkbox_id">Требуется температурный режим</label>
             </div>
             </div>
         </div>
@@ -93,7 +93,10 @@
                     <div class="time-number red">4</div>
                     <span class="time-head">Время</span>
                 </div>
-                <div class="time-radio-title">Когда прибыть на точку</div>
+                <div class="time-container__flex">
+                    <div class="time-radio-title">Когда прибыть на точку</div>
+                    <div class="time-radio-distance">700км в день</div>
+                </div>
                 <button  class="time__button active" >Адрес не указан</button>
                 <button  class="time__button">Адрес не указан</button>
                 
