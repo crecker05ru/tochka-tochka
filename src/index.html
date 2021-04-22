@@ -12,6 +12,7 @@
         <div class="header">
             <h1 class="header-article">FTL: Прямая машина</h1>
         </div>
+        <div class="info-block">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</div>
         <div class="routes-block">
             <div class="routes-header">
                 <div class="routes-number red">1</div>
@@ -86,6 +87,16 @@
                 <input type="checkbox" class="cargo__checkbox" id="cargo__checkbox_id">
                 <label class="cargo-checkbox-text" for="cargo__checkbox_id">Требуется температурный режим</label>
             </div>
+            <div class="cargo-container__flex">
+                <div class="cargo-temperature">
+                    <div class="cargo__title">От, &#8451 </div>
+                    <input type="text" class="cargo-temperature-low__input" placeholder=">1">
+                </div>
+                <div class="cargo-temperature">
+                    <div class="cargo__title">До, &#8451</div>
+                    <input type="text" class="cargo-temperature-high__input" placeholder=">1">
+                </div>
+        </div>
             </div>
         </div>
             <div class="time-block">

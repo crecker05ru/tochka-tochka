@@ -12,6 +12,19 @@ body{
     font-size: 56px;
     margin: 10px 0 20px 0;
 }
+.info-block{
+    width: 356px;
+    height: 82px;
+    background-color:rgba(75, 75, 79, 1);
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 40px 15px 0px 15px;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
 .red{
     background-color: #EF483E;
     border-radius: 50%;
@@ -73,7 +86,7 @@ option[disabled] {
     display: flex;
 }
 .cargo__select{
-    width: 356px;
+    width: 365px;
     height: 44px;
     margin: 8px 0 16px 0;
 }
@@ -123,7 +136,23 @@ option[disabled] {
  margin: 10px 0 0 10px;
 }
 .cargo-price{
-    margin: 0 0 0 12px;
+ margin: 0 0 0 12px;
+}
+.cargo-temperature{
+margin: 10px 0 0 0;
+}
+.cargo-temperature-low__input{
+    width: 166px;
+    height: 38px;
+    margin : 8px 0 16px 0;
+}
+.cargo-temperature-high__input{
+    width: 172px;
+    height: 38px;
+    margin : 8px 0 16px 8px;
+}
+.cargo-temperature{
+    opacity: 0;
 }
 .time-block{
     margin: 44px 0 0 0;
@@ -135,7 +164,6 @@ option[disabled] {
     color: rgba(207, 207, 207, 1);
     text-align: left;
     margin: 0 0 3px 0 ;
-
 }
 .time-radio-title,.time-radio-distance{
     margin: 16px 0 5px 0 ;
@@ -191,7 +219,9 @@ option[disabled] {
     text-align: center;
     padding-top: 4px;
     color: #fff;
-    margin: 0 0 0 590px;
+    position: absolute;
+    top: 8px;
+    left: 590px;
 }
 .time__button{
     position: relative;
@@ -202,10 +232,6 @@ option[disabled] {
     font-family: Helvetica;
     position: absolute;
     bottom: 13px;
-}
-.time-choice{
-    position: absolute;
-    top: 8px;
 }
 .comment-block{
     margin: 16px 0 0 0 ;
@@ -224,4 +250,57 @@ option[disabled] {
     width: 728px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:768px){
+    body{
+        background-color: #343539;
+        color: #fff;
+        margin: 50px 100px 100px 100px;
+    }
+    .info-block{
+        top: 1240px;
+        left: 100px;
+        width: 320px;
+    }
+    .routes-from__input,.routes-where__input{
+        width: 343px;
+        height: 44px;
+        margin: 7px 70px 10px 0;
+    }
+    .header-article{
+        width: 381px;
+        height: 40px;
+        font-family: Helvetica;
+        font-size: 32px;
+        margin: 10px 0 20px 0;
+    }
+    .time__button {
+        width: 343px;
+        height: 44px;
+        background-color:rgba(75, 75, 79, 1);
+        color: rgba(207, 207, 207, 1);
+        text-align: left;
+        margin: 0 0 3px 0 ;
+    }
+    .comment__textarea{
+        width: 343px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 1);
+        font-family: Helvetica;
+        font-size: 15px;
+    }
+    .time-container__flex{
+        width: 343px;
+    }
+    .time-choice{
+        position: absolute;
+        left: 200px;
+    }
+    .cargo-checkbox-text{
+        width: 250px;
+    }
+    .cargo-temperature{
+    opacity: 1;
+    }
 }
