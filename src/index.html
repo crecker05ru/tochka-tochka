@@ -97,9 +97,18 @@
                     <div class="time-radio-title">Когда прибыть на точку</div>
                     <div class="time-radio-distance">700км в день</div>
                 </div>
-                <button  class="time__button active" >Адрес не указан</button>
-                <button  class="time__button">Адрес не указан</button>
-                
+                <button  class="time__button active" >
+                    <input type="radio" class="time-radio__input" id="radio__input" >
+                    <label for="radio__input"></label>
+                    <label class="time__button__label">Адрес не указан</label>
+                    <div class="time-choice">не выбрано</div>
+                </button>
+                <button  class="time__button">
+                    <input type="radio" class="time-radio__input" id="radio__input-2" >
+                    <label for="radio__input-2"></label>
+                    <label class="time__button__label">Адрес не указан</label>
+                    <div class="time-choice">не выбрано</div>
+                </button>
             </div>
             <div class="comment-block">
                 <div class="comment-title">Комментарий к заказу</div>

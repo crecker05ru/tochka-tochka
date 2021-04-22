@@ -43,7 +43,7 @@ body{
 .routes-from__input,.routes-where__input{
     width: 728px;
     height: 44px;
-    margin: 7px 0 10px 0;
+    margin: 7px 70px 10px 0;
 }
 .trasport-weight-block{
     display: flex;
@@ -54,7 +54,15 @@ body{
     width: 172px;
     height: 44px;
     margin: 8px 12px 0 0;
+    
 }
+select:focus {
+    outline: 0.15em solid rgb(253, 10, 10);
+    box-shadow: 0 0 0.2em rgb(255, 10, 10);
+}
+option[disabled] {
+    color: red;
+  }
 .cargo-block{
     margin: 70px 0 0 0;
 }
@@ -86,7 +94,7 @@ body{
     height: 24px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #adb5bd;
+    border: 3px solid;
     border-radius: 0.25em;
     margin-right: 0.5em;
     background-repeat: no-repeat;
@@ -131,6 +139,73 @@ body{
 }
 .time-radio-title,.time-radio-distance{
     margin: 16px 0 5px 0 ;
+}
+.time-radio__input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.time-radio__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.time-radio__input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 95% 95%;
+}
+.time-radio__input:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #dd0a0a;
+}
+.time-radio__input:not(:disabled):active+label::before {
+    background-color: #EF483E;
+    border-color: #EF483E
+}
+.time-radio__input:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+.time-radio__input:checked+label::before {
+    border-color: #EF483E;
+    background-color: #EF483E;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.time-radio__input:disabled+label::before {
+    background-color: #2190ff;
+}
+.time-choice{
+    background-color: rgba(113, 113, 116, 1);
+    border-radius: 2px;
+    width: 119px;
+    height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4px;
+    color: #fff;
+    margin: 0 0 0 590px;
+}
+.time__button{
+    position: relative;
+
+}
+.time__button__label{
+    font-size: 13px;
+    font-family: Helvetica;
+    position: absolute;
+    bottom: 13px;
+}
+.time-choice{
+    position: absolute;
+    top: 8px;
 }
 .comment-block{
     margin: 16px 0 0 0 ;
